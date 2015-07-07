@@ -1,0 +1,49 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AffiliateWP - Affiliate Area Shortcodes\n"
+"POT-Creation-Date: 2015-07-01 16:40+1200\n"
+"PO-Revision-Date: 2015-04-04 11:12-0600\n"
+"Last-Translator: Andrew Munro, Sumobi <andrew@sumobi.com>\n"
+"Language-Team: AffiliateWP <support@affiliatewp.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../affiliatewp-affiliate-area-shortcodes.php:90
+#: ../affiliatewp-affiliate-area-shortcodes.php:102
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: ../affiliatewp-affiliate-area-shortcodes.php:225
+msgid "Get more add-ons for AffiliateWP"
+msgstr ""
+
+#: ../affiliatewp-affiliate-area-shortcodes.php:225
+msgid "More add-ons"
+msgstr ""
+
+#: ../includes/class-activation.php:47
+msgid "This plugin"
+msgstr ""
+
+#: ../includes/class-activation.php:82
+#, php-format
+msgid "requires %s. Please activate it to continue."
+msgstr ""
+
+#: ../includes/class-activation.php:85
+#, php-format
+msgid "requires %s. Please install it to continue."
+msgstr ""
+
+#: ../includes/class-shortcodes.php:392
+msgid "Log out"
+msgstr ""

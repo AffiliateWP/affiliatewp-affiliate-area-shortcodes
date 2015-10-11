@@ -56,6 +56,8 @@ class AffiliateWP_AAS {
 		// [affiliate_username]
         add_shortcode( 'affiliate_username', array( $this, 'affiliate_username' ) );
 
+		// [affiliate_name]
+        add_shortcode( 'affiliate_name', array( $this, 'affiliate_name' ) );
 
         // other
 
@@ -476,6 +478,24 @@ class AffiliateWP_AAS {
 		$content = affwp_get_affiliate_username();
 
     	return do_shortcode( $content );
+    }
+
+	/**
+     * Show an affiliate's name
+     *
+     * [affiliate_name]
+     *
+     * @since  1.1.1
+     */
+    function affiliate_name( $atts, $content = null ) {
+
+		if ( ! ( affwp_is_affiliate() && affwp_is_active_affiliate() ) ) {
+			return;
+		}
+
+		$content = affiliate_wp()->affiliates->get_affiliate_name( affwp_get_affiliate_id() );
+
+		return do_shortcode( $content );
     }
 
     /**

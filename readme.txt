@@ -47,6 +47,9 @@ Show the affiliate's unpaid earnings
 [affiliate_campaign_stats]
 Show an affiliate's campaign stats
 
+[affiliate_name]
+Show an affiliate's name as set by the "Display name" in their WordPress profile
+
 [affiliate_username]
 Show an affiliate's username
 
@@ -91,6 +94,7 @@ OR you can just install it with WordPress by going to Plugins &rarr; Add New &ra
 * New: [affiliate_campaign_stats] shortcode to show just an affiliate's campaign stats.
 * New: [affiliate_username] shortcode to show an affiliate's username
 * New: [affiliate_id] shortcode to show an affiliate's ID
+* New: [affiliate_name] shortcode to show an affiliate's name as set by the "Display name" in their WordPress profile
 
 = 1.1 =
 * New: [affiliate_referrals status="paid"] and [affiliate_referrals status="unpaid"] shortcodes

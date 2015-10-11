@@ -2,8 +2,8 @@
 Contributors: sumobi, mordauk
 Tags: AffiliateWP, affiliate, Pippin Williamson, Andrew Munro, mordauk, pippinsplugins, sumobi, ecommerce, e-commerce, e commerce, selling, referrals, easy digital downloads, digital downloads, woocommerce, woo, shortcodes
 Requires at least: 3.9
-Tested up to: 4.2.2
-Stable tag: 1.1
+Tested up to: 4.3.1
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,8 +29,6 @@ Once activated, this plugin provides a shortcode for each tab of the affiliate a
 
 [affiliate_area_visits]
 
-Since v1.1 the following shortcodes were also added:
-
 [affiliate_logout]
 Show the affiliate a log out link
 
@@ -45,6 +43,9 @@ Show the affiliate's paid earnings
 
 [affiliate_earnings status="unpaid"]
 Show the affiliate's unpaid earnings
+
+[affiliate_campaign_stats]
+Show an affiliate's campaign stats
 
 [affiliate_visits]
 Show the affiliate's visit count
@@ -79,6 +80,9 @@ Just remember to set your Affiliate Area page in Affiliates &rarr; Settings to b
 OR you can just install it with WordPress by going to Plugins &rarr; Add New &rarr; and type this plugin's name
 
 == Changelog ==
+
+= 1.1.1 =
+* New: [affiliate_campaign_stats] shortcode to show just an affiliate's campaign stats.
 
 = 1.1 =
 * New: [affiliate_referrals status="paid"] and [affiliate_referrals status="unpaid"] shortcodes

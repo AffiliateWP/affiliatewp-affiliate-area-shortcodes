@@ -30,8 +30,6 @@ class AffiliateWP_AAS {
         // [affiliate_area_visits]
         add_shortcode( 'affiliate_area_visits', array( $this, 'affiliate_area_visits' ) );
 
-
-
         // individual stats
 
         // [affiliate_referrals]
@@ -51,6 +49,12 @@ class AffiliateWP_AAS {
 
 		// [affiliate_campaign_stats]
         add_shortcode( 'affiliate_campaign_stats', array( $this, 'affiliate_campaign_stats' ) );
+
+		// [affiliate_id]
+        add_shortcode( 'affiliate_id', array( $this, 'affiliate_id' ) );
+
+		// [affiliate_username]
+        add_shortcode( 'affiliate_username', array( $this, 'affiliate_username' ) );
 
 
         // other
@@ -438,8 +442,41 @@ class AffiliateWP_AAS {
     	return do_shortcode( $content );
     }
 
+	/**
+     * Show an affiliate's ID
+     *
+     * [affiliate_id]
+     *
+     * @since  1.1.1
+     */
+    function affiliate_id( $atts, $content = null ) {
 
+    	if ( ! ( affwp_is_affiliate() && affwp_is_active_affiliate() ) ) {
+    		return;
+    	}
 
+		$content = affwp_get_affiliate_id();
+
+    	return do_shortcode( $content );
+    }
+
+	/**
+     * Show an affiliate's username
+     *
+     * [affiliate_username]
+     *
+     * @since  1.1.1
+     */
+    function affiliate_username( $atts, $content = null ) {
+
+    	if ( ! ( affwp_is_affiliate() && affwp_is_active_affiliate() ) ) {
+    		return;
+    	}
+
+		$content = affwp_get_affiliate_username();
+
+    	return do_shortcode( $content );
+    }
 
     /**
      * Show a logout link for the affiliate

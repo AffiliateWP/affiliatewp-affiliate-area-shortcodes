@@ -48,7 +48,10 @@ Show the affiliate's unpaid earnings
 Show an affiliate's campaign stats
 
 [affiliate_name]
-Show an affiliate's name as set by the "Display name" in their WordPress profile
+Show an affiliate's name, as set by the "Display name" field in their WordPress profile
+
+[affiliate_name first_name_only="yes"]
+Only show an affiliate's first name, as set by the "First Name" field in their WordPress profile
 
 [affiliate_username]
 Show an affiliate's username
@@ -89,6 +92,9 @@ Just remember to set your Affiliate Area page in Affiliates &rarr; Settings to b
 OR you can just install it with WordPress by going to Plugins &rarr; Add New &rarr; and type this plugin's name
 
 == Changelog ==
+
+= 1.1.2 =
+* New: The [affiliate_name] shortcode can now be forced to show the affiliate's first name, rather than their display name. Example: [affiliate_name first_name_only="yes"]
 
 = 1.1.1 =
 * New: [affiliate_campaign_stats] shortcode to show just an affiliate's campaign stats.

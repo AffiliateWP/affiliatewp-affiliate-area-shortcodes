@@ -493,7 +493,20 @@ class AffiliateWP_AAS {
 			return;
 		}
 
-		$content = affiliate_wp()->affiliates->get_affiliate_name( affwp_get_affiliate_id() );
+		$atts = shortcode_atts( array(
+    		'first_name_only' => ''
+    	), $atts, 'affiliate_name' );
+
+		if ( isset( $atts['first_name_only'] ) && 'yes' === $atts['first_name_only'] ) {
+
+			global $current_user;
+	 		get_currentuserinfo();
+
+			$content = $current_user->user_firstname;
+
+		} else {
+			$content = affiliate_wp()->affiliates->get_affiliate_name( affwp_get_affiliate_id() );
+		}
 
 		return do_shortcode( $content );
     }

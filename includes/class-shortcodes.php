@@ -59,6 +59,9 @@ class AffiliateWP_AAS {
 		// [affiliate_name]
         add_shortcode( 'affiliate_name', array( $this, 'affiliate_name' ) );
 
+		// [affiliate_website]
+        add_shortcode( 'affiliate_website', array( $this, 'affiliate_website' ) );
+
         // other
 
         // [affiliate_logout]
@@ -89,7 +92,7 @@ class AffiliateWP_AAS {
     	return $ret;
     }
 
-    /**
+	/**
     * [affiliate_area_graphs] shortcode
     *
     * @since  1.0
@@ -112,7 +115,6 @@ class AffiliateWP_AAS {
 
     	return do_shortcode( $content );
     }
-
 
     /**
     * [affiliate_area_settings] shortcode
@@ -510,6 +512,28 @@ class AffiliateWP_AAS {
 
 		return do_shortcode( $content );
     }
+
+	/**
+	 * Show an affiliate's website url
+	 *
+	 * [affiliate_website]
+	 *
+	 * @since  1.1.3
+	 */
+	public function affiliate_website( $atts, $content = null ) {
+
+		if ( ! ( affwp_is_affiliate() && affwp_is_active_affiliate() ) ) {
+    		return;
+    	}
+
+		global $current_user;
+		get_currentuserinfo();
+
+		$content = $current_user->user_url;
+
+
+		return do_shortcode( $content );
+	}
 
     /**
      * Show a logout link for the affiliate

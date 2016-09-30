@@ -56,6 +56,9 @@ Only show an affiliate's first name, as set by the "First Name" field in their W
 [affiliate_username]
 Show an affiliate's username
 
+[affiliate_website]
+Show an affiliate's website URL
+
 [affiliate_id]
 Show an affiliate's ID
 
@@ -95,7 +98,6 @@ OR you can just install it with WordPress by going to Plugins &rarr; Add New &ra
 
 = 1.1.3 =
 * New: [affiliate_website] shortcode to show the affiliate's website as entered in their WordPress user profile
-
 
 = 1.1.2 =
 * New: The [affiliate_name] shortcode can now be forced to show the affiliate's first name, rather than their display name. Example: [affiliate_name first_name_only="yes"]

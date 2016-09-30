@@ -27,6 +27,9 @@ class AffiliateWP_AAS {
         // [affiliate_area_urls]
         add_shortcode( 'affiliate_area_urls', array( $this, 'affiliate_area_urls' ) );
 
+		// [affiliate_area_payouts]
+        add_shortcode( 'affiliate_area_payouts', array( $this, 'affiliate_area_payouts' ) );
+
         // [affiliate_area_visits]
         add_shortcode( 'affiliate_area_visits', array( $this, 'affiliate_area_visits' ) );
 
@@ -264,6 +267,29 @@ class AffiliateWP_AAS {
     	return do_shortcode( $content );
     }
 
+	/**
+	* [affiliate_area_payouts] shortcode
+	*
+	* @since 1.1.4
+	*/
+	function affiliate_area_payouts( $atts, $content = null ) {
+
+		if ( ! ( affwp_is_affiliate() && affwp_is_active_affiliate() ) ) {
+			return;
+		}
+
+		ob_start();
+
+		echo '<div id="affwp-affiliate-dashboard">';
+
+		affiliate_wp()->templates->get_template_part( 'dashboard-tab', 'payouts' );
+
+		echo '</div>';
+
+		$content = ob_get_clean();
+
+		return do_shortcode( $content );
+	}
 
     /**
      * Show the total number of unpaid/paid referrals for the logged in affiliate
@@ -501,10 +527,8 @@ class AffiliateWP_AAS {
 
 		if ( isset( $atts['first_name_only'] ) && 'yes' === $atts['first_name_only'] ) {
 
-			global $current_user;
-	 		get_currentuserinfo();
-
-			$content = $current_user->user_firstname;
+			$current_user = wp_get_current_user();
+			$content      = $current_user->user_firstname;
 
 		} else {
 			$content = affiliate_wp()->affiliates->get_affiliate_name( affwp_get_affiliate_id() );
@@ -526,11 +550,8 @@ class AffiliateWP_AAS {
     		return;
     	}
 
-		global $current_user;
-		get_currentuserinfo();
-
-		$content = $current_user->user_url;
-
+		$current_user = wp_get_current_user();
+		$content      = $current_user->user_url;
 
 		return do_shortcode( $content );
 	}

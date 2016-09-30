@@ -5,7 +5,7 @@
  * Description: Provides shortcodes for each tab of the Affiliate Area + other useful shortcodes
  * Author: Pippin Williamson and Andrew Munro
  * Author URI: http://affiliatewp.com
- * Version: 1.1.3
+ * Version: 1.1.4
  * Text Domain: affiliatewp-affiliate-area-shortcodes
  * Domain Path: languages
  *
@@ -48,7 +48,7 @@ if ( ! class_exists( 'AffiliateWP_Affiliate_Area_Shortcodes' ) ) {
 		 *
 		 * @since 1.1
 		 */
-		private $version = '1.1.3';
+		private $version = '1.1.4';
 
 		/**
 		 * Main AffiliateWP_Affiliate_Area_Shortcodes Instance

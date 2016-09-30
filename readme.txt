@@ -2,8 +2,8 @@
 Contributors: sumobi, mordauk
 Tags: AffiliateWP, affiliate, Pippin Williamson, Andrew Munro, mordauk, pippinsplugins, sumobi, ecommerce, e-commerce, e commerce, selling, referrals, easy digital downloads, digital downloads, woocommerce, woo, shortcodes
 Requires at least: 3.9
-Tested up to: 4.3.1
-Stable tag: 1.1.3
+Tested up to: 4.6.1
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,8 @@ Once activated, this plugin provides a shortcode for each tab of the affiliate a
 [affiliate_area_referrals]
 
 [affiliate_area_stats]
+
+[affiliate_area_payouts]
 
 [affiliate_area_urls]
 
@@ -95,6 +97,10 @@ Just remember to set your Affiliate Area page in Affiliates &rarr; Settings to b
 OR you can just install it with WordPress by going to Plugins &rarr; Add New &rarr; and type this plugin's name
 
 == Changelog ==
+
+= 1.1.4 =
+* New: [affiliate_area_payouts] shortcode
+* Tweak: Replaced get_currentuserinfo() with wp_get_current_user()
 
 = 1.1.3 =
 * New: [affiliate_website] shortcode to show the affiliate's website as entered in their WordPress user profile

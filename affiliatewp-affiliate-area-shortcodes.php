@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: AffiliateWP - Affiliate Area Shortcodes
- * Plugin URI: http://affiliatewp.com/
+ * Plugin URI: https://affiliatewp.com/
  * Description: Provides shortcodes for each tab of the Affiliate Area + other useful shortcodes
- * Author: Pippin Williamson and Andrew Munro
- * Author URI: http://affiliatewp.com
- * Version: 1.1.4
+ * Author: AffiliateWP, LLC
+ * Author URI: https://affiliatewp.com
+ * Version: 1.1.5
  * Text Domain: affiliatewp-affiliate-area-shortcodes
  * Domain Path: languages
  *
@@ -48,7 +48,7 @@ if ( ! class_exists( 'AffiliateWP_Affiliate_Area_Shortcodes' ) ) {
 		 *
 		 * @since 1.1
 		 */
-		private $version = '1.1.4';
+		private $version = '1.1.5';
 
 		/**
 		 * Main AffiliateWP_Affiliate_Area_Shortcodes Instance

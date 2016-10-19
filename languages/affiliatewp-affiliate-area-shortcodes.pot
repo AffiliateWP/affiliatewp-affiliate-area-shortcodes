@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AffiliateWP - Affiliate Area Shortcodes\n"
-"POT-Creation-Date: 2015-10-11 15:59+1300\n"
+"POT-Creation-Date: 2016-10-19 16:31+1300\n"
 "PO-Revision-Date: 2015-04-04 11:12-0600\n"
 "Last-Translator: Andrew Munro, Sumobi <andrew@sumobi.com>\n"
 "Language-Team: AffiliateWP <support@affiliatewp.com>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.9\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -44,34 +44,50 @@ msgstr ""
 msgid "requires %s. Please install it to continue."
 msgstr ""
 
-#: ../includes/class-shortcodes.php:409
+#: ../includes/class-shortcodes.php:441
 msgid "Campaign"
 msgstr ""
 
-#: ../includes/class-shortcodes.php:410
+#: ../includes/class-shortcodes.php:442
 msgid "Visits"
 msgstr ""
 
-#: ../includes/class-shortcodes.php:411
+#: ../includes/class-shortcodes.php:443
 msgid "Unique Links"
 msgstr ""
 
-#: ../includes/class-shortcodes.php:412
+#: ../includes/class-shortcodes.php:444
 msgid "Converted"
 msgstr ""
 
-#: ../includes/class-shortcodes.php:413
+#: ../includes/class-shortcodes.php:445
 msgid "Conversion Rate"
 msgstr ""
 
-#: ../includes/class-shortcodes.php:421
+#: ../includes/class-shortcodes.php:453
 msgid "None set"
 msgstr ""
 
-#: ../includes/class-shortcodes.php:430
+#: ../includes/class-shortcodes.php:462
 msgid "You have no referrals or visits that included a campaign name."
 msgstr ""
 
-#: ../includes/class-shortcodes.php:517
+#: ../includes/class-shortcodes.php:577
+msgid "Your affiliate account is pending approval"
+msgstr ""
+
+#: ../includes/class-shortcodes.php:578
+msgid "Your affiliate account is not active"
+msgstr ""
+
+#: ../includes/class-shortcodes.php:579
+msgid "Your affiliate account request has been rejected"
+msgstr ""
+
+#: ../includes/class-shortcodes.php:580
+msgid "Your affiliate profile has been updated"
+msgstr ""
+
+#: ../includes/class-shortcodes.php:627
 msgid "Log out"
 msgstr ""

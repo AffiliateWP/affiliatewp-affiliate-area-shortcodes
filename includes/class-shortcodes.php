@@ -67,6 +67,9 @@ class AffiliateWP_AAS {
 
         // other
 
+		// [affiliate_area_notices]
+		add_shortcode( 'affiliate_area_notices', array( $this, 'affiliate_area_notices' ) );
+
         // [affiliate_logout]
         add_shortcode( 'affiliate_logout', array( $this, 'affiliate_logout' ) );
 
@@ -87,7 +90,8 @@ class AffiliateWP_AAS {
     		has_shortcode( $post->post_content, 'affiliate_area_settings' )  ||
     		has_shortcode( $post->post_content, 'affiliate_area_stats' )     ||
     		has_shortcode( $post->post_content, 'affiliate_area_urls' )      ||
-    		has_shortcode( $post->post_content, 'affiliate_area_visits' )
+    		has_shortcode( $post->post_content, 'affiliate_area_visits' )    ||
+			has_shortcode( $post->post_content, 'affiliate_area_notices' )
     	) {
     		$ret = true;
     	}
@@ -554,6 +558,54 @@ class AffiliateWP_AAS {
 		$content      = $current_user->user_url;
 
 		return do_shortcode( $content );
+	}
+
+	/**
+	 * Show dashboard notices
+	 *
+	 * [affiliate_area_notices]
+	 *
+	 * @since  1.1.5
+	 */
+	public function affiliate_area_notices( $atts, $content = null ) {
+
+		if ( ! ( is_user_logged_in() && affwp_is_affiliate() ) ) {
+			return;
+		}
+
+		$atts = shortcode_atts( array(
+			'pending'          => __( 'Your affiliate account is pending approval', 'affiliatewp-affiliate-area-shortcodes' ),
+			'inactive'         => __( 'Your affiliate account is not active', 'affiliatewp-affiliate-area-shortcodes' ),
+			'rejected'         => __( 'Your affiliate account request has been rejected', 'affiliatewp-affiliate-area-shortcodes' ),
+			'profile_updated'  => __( 'Your affiliate profile has been updated', 'affiliatewp-affiliate-area-shortcodes' )
+		), $atts, 'affiliate_area_notices' );
+
+		if ( ! empty( $_GET['affwp_notice'] ) && 'profile-updated' == $_GET['affwp_notice'] ) {
+			$notice = $atts['profile_updated'];
+		}
+
+		if ( 'pending' == affwp_get_affiliate_status( affwp_get_affiliate_id() ) ) {
+			$notice = $atts['pending'];
+		} elseif ( 'inactive' == affwp_get_affiliate_status( affwp_get_affiliate_id() ) ) {
+			$notice = $atts['inactive'];
+		} elseif ( 'rejected' == affwp_get_affiliate_status( affwp_get_affiliate_id() ) ) {
+			$notice = $atts['rejected'];
+		} else {
+			$notice = '';
+		}
+
+		ob_start();
+
+		if ( $notice ): ?>
+
+		<p class="affwp-notice"><?php echo $notice; ?></p>
+
+		<?php endif;
+
+		$content = ob_get_clean();
+
+		return do_shortcode( $content );
+
 	}
 
     /**

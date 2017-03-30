@@ -2,8 +2,8 @@
 Contributors: sumobi, mordauk
 Tags: AffiliateWP, affiliate, Pippin Williamson, Andrew Munro, mordauk, pippinsplugins, sumobi, ecommerce, e-commerce, e commerce, selling, referrals, easy digital downloads, digital downloads, woocommerce, woo, shortcodes
 Requires at least: 3.9
-Tested up to: 4.6.1
-Stable tag: 1.1.5
+Tested up to: 4.7.3
+Stable tag: 1.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -100,6 +100,9 @@ Just remember to set your Affiliate Area page in Affiliates &rarr; Settings to b
 OR you can just install it with WordPress by going to Plugins &rarr; Add New &rarr; and type this plugin's name
 
 == Changelog ==
+
+= 1.1.6 =
+* Fix: Load the jQuery UI datepicker and styling for the [affiliate_area_graphs] shortcode
 
 = 1.1.5 =
 * New: [affiliate_area_notices] shortcode

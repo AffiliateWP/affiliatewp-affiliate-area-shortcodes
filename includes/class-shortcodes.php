@@ -7,6 +7,8 @@ class AffiliateWP_AAS {
         // force front-end scripts
         add_filter( 'affwp_force_frontend_scripts', array( $this, 'force_frontend_scripts' ) );
 
+		add_action( 'wp_enqueue_scripts', array( $this, 'load_datepicker' ) );
+
         // affiliate area tabs
 
         // [affiliate_area_graphs]
@@ -83,6 +85,10 @@ class AffiliateWP_AAS {
     public function force_frontend_scripts( $ret ) {
     	global $post;
 
+		if ( ! is_object( $post ) ) {
+			return;
+		}
+
     	if (
     		has_shortcode( $post->post_content, 'affiliate_area_creatives' ) ||
     		has_shortcode( $post->post_content, 'affiliate_area_graphs' )    ||
@@ -98,6 +104,27 @@ class AffiliateWP_AAS {
 
     	return $ret;
     }
+
+	/**
+	 *  Load the jQuery UI datepicker and styling for the [affiliate_area_graphs] shortcode
+	 *
+	 *  @since 1.1.6
+	 *  @return void
+	 */
+	public function load_datepicker() {
+
+		global $post;
+
+		if ( ! is_object( $post ) ) {
+			return;
+		}
+
+		if ( has_shortcode( $post->post_content, 'affiliate_area_graphs' ) ) {
+			wp_enqueue_script( 'jquery-ui-datepicker' );
+			wp_enqueue_style( 'jquery-ui-css' );
+		}
+
+	}
 
 	/**
     * [affiliate_area_graphs] shortcode

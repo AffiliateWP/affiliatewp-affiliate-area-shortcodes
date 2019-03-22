@@ -90,6 +90,7 @@ class AffiliateWP_AAS {
 		}
 
     	if (
+			is_page( affiliate_wp()->settings->get( 'affiliates_page' ) ) ||
     		has_shortcode( $post->post_content, 'affiliate_area_creatives' ) ||
     		has_shortcode( $post->post_content, 'affiliate_area_graphs' )    ||
     		has_shortcode( $post->post_content, 'affiliate_area_referrals' ) ||

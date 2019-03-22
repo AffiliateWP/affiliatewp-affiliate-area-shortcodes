@@ -77,31 +77,31 @@ class AffiliateWP_AAS {
 
 	}
 
-    /**
-     * Force the frontend scripts to load on pages with the shortcodes
-     *
-     * @since  1.0
-     */
-    public function force_frontend_scripts( $ret ) {
-    	global $post;
+	/**
+	 * Force the frontend scripts to load on pages with the shortcodes
+	 *
+	 * @since  1.0
+	 */
+	public function force_frontend_scripts( $ret ) {
+		global $post;
 
 		if ( ! is_object( $post ) ) {
 			return;
 		}
 
-    	if (
-			is_page( affiliate_wp()->settings->get( 'affiliates_page' ) ) ||
-    		has_shortcode( $post->post_content, 'affiliate_area_creatives' ) ||
-    		has_shortcode( $post->post_content, 'affiliate_area_graphs' )    ||
-    		has_shortcode( $post->post_content, 'affiliate_area_referrals' ) ||
-    		has_shortcode( $post->post_content, 'affiliate_area_settings' )  ||
-    		has_shortcode( $post->post_content, 'affiliate_area_stats' )     ||
-    		has_shortcode( $post->post_content, 'affiliate_area_urls' )      ||
-    		has_shortcode( $post->post_content, 'affiliate_area_visits' )    ||
+		if (
+			is_page( affiliate_wp()->settings->get( 'affiliates_page' ) )    ||
+			has_shortcode( $post->post_content, 'affiliate_area_creatives' ) ||
+			has_shortcode( $post->post_content, 'affiliate_area_graphs' )    ||
+			has_shortcode( $post->post_content, 'affiliate_area_referrals' ) ||
+			has_shortcode( $post->post_content, 'affiliate_area_settings' )  ||
+			has_shortcode( $post->post_content, 'affiliate_area_stats' )     ||
+			has_shortcode( $post->post_content, 'affiliate_area_urls' )      ||
+			has_shortcode( $post->post_content, 'affiliate_area_visits' )    ||
 			has_shortcode( $post->post_content, 'affiliate_area_notices' )
-    	) {
-    		$ret = true;
-    	}
+		) {
+			$ret = true;
+		}
 
     	return $ret;
     }

@@ -76,15 +76,15 @@ Show the affiliate's conversion rate
 [affiliate_commission_rate]
 Show the affiliate's commission rate
 
-Although the tabs in the affiliate area can be easily removed or reordered using the [dashboard.php template file](http://docs.affiliatewp.com/article/118-modifying-template-files "Modifying template files"), some customers prefer the use of shortcodes.
+Although the tabs in the affiliate area can be easily removed or reordered using the [dashboard.php template file](https://docs.affiliatewp.com/article/118-modifying-template-files "Modifying template files"), some customers prefer the use of shortcodes.
 
 With the above shortcodes you'll be able to:
 
 1. Create an Affiliate Area and stack them in any order on one page.
 2. Put each shortcode on a separate page, essentially creating your own page structure.
-3. Have more control over which areas the affiliates see, without having to modify the [template files](http://docs.affiliatewp.com/article/118-modifying-template-files "Modifying template files").
+3. Have more control over which areas the affiliates see, without having to modify the [template files](https://docs.affiliatewp.com/article/118-modifying-template-files "Modifying template files").
 
-Just remember to set your Affiliate Area page in Affiliates &rarr; Settings to be your [login page](http://docs.affiliatewp.com/article/98-affiliatelogin "Affiliate Login Shortcode") or your affiliates will have nowhere to log in from via emails etc.
+Just remember to set your Affiliate Area page in Affiliates &rarr; Settings to be your [login page](https://docs.affiliatewp.com/article/98-affiliatelogin "Affiliate Login Shortcode") or your affiliates will have nowhere to log in from via emails etc.
 
 **What is AffiliateWP?**
 

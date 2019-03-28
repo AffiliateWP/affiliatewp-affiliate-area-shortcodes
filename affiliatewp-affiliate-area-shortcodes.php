@@ -5,7 +5,7 @@
  * Description: Provides shortcodes for each tab of the Affiliate Area + other useful shortcodes
  * Author: AffiliateWP, LLC
  * Author URI: https://affiliatewp.com
- * Version: 1.1.6
+ * Version: 1.1.7
  * Text Domain: affiliatewp-affiliate-area-shortcodes
  * Domain Path: languages
  *
@@ -48,7 +48,7 @@ if ( ! class_exists( 'AffiliateWP_Affiliate_Area_Shortcodes' ) ) {
 		 *
 		 * @since 1.1
 		 */
-		private $version = '1.1.6';
+		private $version = '1.1.7';
 
 		/**
 		 * Main AffiliateWP_Affiliate_Area_Shortcodes Instance

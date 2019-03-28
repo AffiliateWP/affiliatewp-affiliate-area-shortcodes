@@ -11,7 +11,7 @@ Provides shortcodes for each tab of the Affiliate Area
 
 == Description ==
 
-> This plugin requires [AffiliateWP](http://affiliatewp.com/ "AffiliateWP") in order to function.
+> This plugin requires [AffiliateWP](https://affiliatewp.com/ "AffiliateWP") in order to function.
 
 Once activated, this plugin provides a shortcode for each tab of the affiliate area:
 

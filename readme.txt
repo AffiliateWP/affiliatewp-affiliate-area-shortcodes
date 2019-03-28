@@ -101,6 +101,9 @@ OR you can just install it with WordPress by going to Plugins &rarr; Add New &ra
 
 == Changelog ==
 
+= 1.1.7 =
+* Tweak: Force the AffiliateWP front-end scripts to load when on the page set as the Affiliate Area
+
 = 1.1.6 =
 * Fix: Load the jQuery UI datepicker and styling for the [affiliate_area_graphs] shortcode
 

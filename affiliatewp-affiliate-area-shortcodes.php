@@ -220,15 +220,15 @@ if ( ! class_exists( 'AffiliateWP_Affiliate_Area_Shortcodes' ) ) {
 		 * @return      array $links The modified links array
 		 */
 		public function plugin_meta( $links, $file ) {
-		    if ( $file == plugin_basename( __FILE__ ) ) {
-		        $plugins_link = array(
-		            '<a title="' . __( 'Get more add-ons for AffiliateWP', 'affiliatewp-affiliate-area-shortcodes' ) . '" href="'. admin_url( 'admin.php?page=affiliate-wp-add-ons' ) . '">' . __( 'More add-ons', 'affiliatewp-affiliate-area-shortcodes' ) . '</a>'
-		        );
+			if ( $file == plugin_basename( __FILE__ ) ) {
+				$plugins_link = array(
+				'<a title="' . __( 'Get more add-ons for AffiliateWP', 'affiliatewp-affiliate-area-shortcodes' ) . '" href="'. admin_url( 'admin.php?page=affiliate-wp-add-ons' ) . '">' . __( 'More add-ons', 'affiliatewp-affiliate-area-shortcodes' ) . '</a>'
+				);
 
-		        $links = array_merge( $links, $plugins_link );
-		    }
+				$links = array_merge( $links, $plugins_link );
+			}
 
-		    return $links;
+			return $links;
 		}
 	}
 
@@ -245,20 +245,18 @@ if ( ! class_exists( 'AffiliateWP_Affiliate_Area_Shortcodes' ) ) {
 	 * @return object The one true AffiliateWP_Affiliate_Area_Shortcodes Instance
 	 */
 	function affiliatewp_affiliate_area_shortcodes() {
-	    if ( ! class_exists( 'Affiliate_WP' ) ) {
+		if ( ! class_exists( 'Affiliate_WP' ) ) {
 
-	        if ( ! class_exists( 'AffiliateWP_Activation' ) ) {
-	            require_once 'includes/class-activation.php';
-	        }
+			if ( ! class_exists( 'AffiliateWP_Activation' ) ) {
+				require_once 'includes/class-activation.php';
+			}
 
-	        $activation = new AffiliateWP_Activation( plugin_dir_path( __FILE__ ), basename( __FILE__ ) );
-	        $activation = $activation->run();
+			$activation = new AffiliateWP_Activation( plugin_dir_path( __FILE__ ), basename( __FILE__ ) );
+			$activation = $activation->run();
 
-	    } else {
-
-	        return AffiliateWP_Affiliate_Area_Shortcodes::instance();
-
-	    }
+		} else {
+			return AffiliateWP_Affiliate_Area_Shortcodes::instance();
+		}
 	}
 	add_action( 'plugins_loaded', 'affiliatewp_affiliate_area_shortcodes', 100 );
 

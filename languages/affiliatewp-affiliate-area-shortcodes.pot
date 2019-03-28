@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AffiliateWP - Affiliate Area Shortcodes\n"
-"POT-Creation-Date: 2016-10-19 16:31+1300\n"
+"POT-Creation-Date: 2019-03-29 09:36+1300\n"
 "PO-Revision-Date: 2015-04-04 11:12-0600\n"
 "Last-Translator: Andrew Munro, Sumobi <andrew@sumobi.com>\n"
 "Language-Team: AffiliateWP <support@affiliatewp.com>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 2.1.1\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -44,50 +44,50 @@ msgstr ""
 msgid "requires %s. Please install it to continue."
 msgstr ""
 
-#: ../includes/class-shortcodes.php:441
+#: ../includes/class-shortcodes.php:469
 msgid "Campaign"
 msgstr ""
 
-#: ../includes/class-shortcodes.php:442
+#: ../includes/class-shortcodes.php:470
 msgid "Visits"
 msgstr ""
 
-#: ../includes/class-shortcodes.php:443
+#: ../includes/class-shortcodes.php:471
 msgid "Unique Links"
 msgstr ""
 
-#: ../includes/class-shortcodes.php:444
+#: ../includes/class-shortcodes.php:472
 msgid "Converted"
 msgstr ""
 
-#: ../includes/class-shortcodes.php:445
+#: ../includes/class-shortcodes.php:473
 msgid "Conversion Rate"
 msgstr ""
 
-#: ../includes/class-shortcodes.php:453
+#: ../includes/class-shortcodes.php:481
 msgid "None set"
 msgstr ""
 
-#: ../includes/class-shortcodes.php:462
+#: ../includes/class-shortcodes.php:490
 msgid "You have no referrals or visits that included a campaign name."
 msgstr ""
 
-#: ../includes/class-shortcodes.php:577
+#: ../includes/class-shortcodes.php:605
 msgid "Your affiliate account is pending approval"
 msgstr ""
 
-#: ../includes/class-shortcodes.php:578
+#: ../includes/class-shortcodes.php:606
 msgid "Your affiliate account is not active"
 msgstr ""
 
-#: ../includes/class-shortcodes.php:579
+#: ../includes/class-shortcodes.php:607
 msgid "Your affiliate account request has been rejected"
 msgstr ""
 
-#: ../includes/class-shortcodes.php:580
+#: ../includes/class-shortcodes.php:608
 msgid "Your affiliate profile has been updated"
 msgstr ""
 
-#: ../includes/class-shortcodes.php:627
+#: ../includes/class-shortcodes.php:655
 msgid "Log out"
 msgstr ""

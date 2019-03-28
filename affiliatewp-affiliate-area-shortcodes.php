@@ -222,7 +222,7 @@ if ( ! class_exists( 'AffiliateWP_Affiliate_Area_Shortcodes' ) ) {
 		public function plugin_meta( $links, $file ) {
 		    if ( $file == plugin_basename( __FILE__ ) ) {
 		        $plugins_link = array(
-		            '<a title="' . __( 'Get more add-ons for AffiliateWP', 'affiliatewp-affiliate-area-shortcodes' ) . '" href="http://affiliatewp.com/addons/" target="_blank">' . __( 'More add-ons', 'affiliatewp-affiliate-area-shortcodes' ) . '</a>'
+		            '<a title="' . __( 'Get more add-ons for AffiliateWP', 'affiliatewp-affiliate-area-shortcodes' ) . '" href="'. admin_url( 'admin.php?page=affiliate-wp-add-ons' ) . '">' . __( 'More add-ons', 'affiliatewp-affiliate-area-shortcodes' ) . '</a>'
 		        );
 
 		        $links = array_merge( $links, $plugins_link );

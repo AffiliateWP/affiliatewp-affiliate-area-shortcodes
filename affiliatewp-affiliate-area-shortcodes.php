@@ -3,8 +3,8 @@
  * Plugin Name: AffiliateWP - Affiliate Area Shortcodes
  * Plugin URI: https://affiliatewp.com/
  * Description: Provides shortcodes for each tab of the Affiliate Area + other useful shortcodes
- * Author: AffiliateWP, LLC
- * Author URI: https://affiliatewp.com
+ * Author: Sandhills Development, LLC
+ * Author URI: https://sandhillsdev.com
  * Version: 1.1.7
  * Text Domain: affiliatewp-affiliate-area-shortcodes
  * Domain Path: languages

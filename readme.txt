@@ -2,7 +2,7 @@
 Contributors: sumobi, mordauk
 Tags: AffiliateWP, affiliate, Pippin Williamson, Andrew Munro, mordauk, pippinsplugins, sumobi, ecommerce, e-commerce, e commerce, selling, referrals, easy digital downloads, digital downloads, woocommerce, woo, shortcodes
 Requires at least: 4.6
-Tested up to: 5.3
+Tested up to: 5.5
 Requires PHP: 5.3
 Stable tag: 1.1.7
 License: GPLv2 or later
